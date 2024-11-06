@@ -1,0 +1,123 @@
+.home {
+
+    padding: 164px 0px;
+
+    background: url(/images/home/background-image.png) 0 0/cover no-repeat;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__decor-top {
+        display: none;
+        position: absolute;
+        top: -230px;
+        left: -200px;
+    }
+
+    &__decor-bottom {
+        display: none;
+        position: absolute;
+        top: 360px;
+        right: -90px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 120%;
+        color: #fff;
+        max-width: 550px;
+        margin: 80px 0px 15px 0px;
+    }
+
+    &__text {
+        color: #8794BA;
+        max-width: 550px;
+        margin-bottom: 50px;
+    }
+
+    &__button {
+        cursor: pointer;
+        border-radius: 68px;
+        padding: 16px 80px;
+        background: #EF2A82;
+        max-width: 238px;
+        transition: all 0.2s linear;
+    }
+
+    &__button:hover {
+        background-color: #a8004c;
+    }
+
+    &__link {
+        font-weight: 400;
+        font-size: 16px;
+        color: #fff;
+    }
+
+    &__image {
+        margin-right: -200px;
+    }
+
+    &__additionally-image {
+        display: none;
+
+    }
+}
+
+/* ============================================================================== */
+
+@media (max-width: 1250px) {
+    .home {
+
+        &__container {
+            text-align: center;
+            flex-direction: column;
+        }
+
+        &__content {
+            margin: 0px auto;
+        }
+
+        &__button {
+            margin: 0px auto;
+            margin-bottom: 30px;
+        }
+
+        &__image {
+            margin: 0px auto;
+        }
+
+        &__image img {
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        &__title {
+            font-size: 47px;
+        }
+    }
+}
+
+@media (max-width: 528px) {
+    .home {
+        &__title {
+            font-size: 34px;
+            margin: 30px 0px;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+
+        &__button {
+            padding: 16px 40px;
+            max-width: 180px;
+        }
+    }
+}
